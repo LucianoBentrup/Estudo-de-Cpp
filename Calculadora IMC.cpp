@@ -4,7 +4,7 @@ using namespace std;
 void main {
   
     //Caculadora IMC
-    //Peso / altura * altura
+    //Peso / (altura * altura)
     //acima da media > 18.5
     //Na media 18.5-24.9
     //Abaixo da media < 25
