@@ -1,5 +1,5 @@
 #include <iostream>
-using namestapce std;
+using namespace std;
   
 void main {
   
