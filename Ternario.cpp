@@ -13,12 +13,17 @@ int main() {
 		cout << "Tente advinhar o numero inserido: ";
 		cin >> GuestUserNum;
 
+        (HostUserNum==GuestUserNum)? cout << "Correto": cout << "Errado"; 
 
-			if(HostUserNum==GuestUserNum)
+
+			/*if(HostUserNum==GuestUserNum)
 				cout << "Correto";
 			else
-				cout << "Incorreto";
+				cout << "Incorreto";*/
+
+
 
 
 
 		system("pause>0");
+}
