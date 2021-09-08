@@ -21,16 +21,17 @@ int main()
             Num1Int=((int)num1 == num1);
             Num2Int=((int)num2 == num2);
 
-        if (Num1Int&&Num2Int)
+            if (Num1Int&&Num2Int)
 
-            cout << num1 << operador << num2 << "=" << (int)num1%(int)num2; 
+                cout << num1 << operador << num2 << "=" << (int)num1%(int)num2; 
 
-        else
+            else
 
-            cout << "Invalido!";
+                cout << "Invalido!";
         
         break;
 
+        default:cout << "Operador invalido" << endl; 
 
         
     }
