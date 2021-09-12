@@ -21,7 +21,7 @@ cin >> num;
 
         }//Fim while.
 
-    cout << "O numero que voce digitou possui" << counter << "digitos";
+    cout << "O numero que voce digitou possui " << counter << " digitos";
 
     }//Fim else
 
