@@ -8,11 +8,12 @@ int main(){
 int counter;
 counter=100;
 
+cout << "Os numeros divisiveis por 3 e 5 são: ";
     while (counter<=500)
     {
         if (counter % 3==0 && counter % 5==0)
         {
-            cout << "O numero " << counter << "é divisivel por 3 e 5";
+            cout << counter << ", ";
         }// Fim if
     counter++; 
     }// Fim while
