@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
   
-void main {
+void main() 
+{
   
     //Caculadora IMC
     //Peso / (altura * altura)
@@ -10,7 +11,9 @@ void main {
     //Abaixo da media < 25
   
   
-    float altura,peso,imc;
+    
+    float peso,imc,altura;
+    
     
     
     cout << "Use pontos no lugar de virgulas" << endl;
