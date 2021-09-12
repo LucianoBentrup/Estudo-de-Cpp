@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
 
-    int num;
+    float num;
 
 cout << "Contador de digitos" << endl;
 cout << "Digite um numero:"; 
