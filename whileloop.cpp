@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
 
-int main(){
+int main()
+{
 
     int num;
 
@@ -13,14 +14,19 @@ cin >> num;
         cout << "Voce inseriu 0";
     else 
     {
+        if (num<0)
+        {
+            num = -1 * num; 
+        }
         
+
         int counter=0;
         while (num>0){
             num = num/10; 
             counter++;
 
         }//Fim while.
-
+    
     cout << "O numero que voce digitou possui " << counter << " digitos";
 
     }//Fim else
