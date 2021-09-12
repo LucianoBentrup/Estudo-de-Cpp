@@ -17,7 +17,7 @@ cin >> num;
         if (num<0)
         {
             num = -1 * num; 
-        }
+        // Fim else if 
         
 
         int counter=0;
@@ -30,10 +30,6 @@ cin >> num;
     cout << "O numero que voce digitou possui " << counter << " digitos";
 
     }//Fim else
-
-
-
-
 
 }
 
