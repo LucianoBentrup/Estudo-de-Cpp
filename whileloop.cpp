@@ -17,7 +17,7 @@ cin >> num;
         if (num<0)
         {
             num = -1 * num; 
-        // Fim else if 
+        }// Fim else if 
         
 
         int counter=0;

@@ -21,7 +21,7 @@ int main ()
 
             rnum = rnum * 10;
             rnum = num % 10 + rnum; 
-            cout << "loop";
+           
         }//fim while
      
     cout << "O numero ao contrario é:" << rnum << endl;
