@@ -14,13 +14,20 @@ int main ()
 
         while (num>=0)
         {
-            if (num<0){
+            if (num<0)
+            {
                 num = num * -1;
             }//fim if
 
 
             rnum = rnum * 10;
             rnum = num % 10 + rnum; 
+            
+            //teste
+            cout << num;
+            cout << rnum;
+            cout << "loop";
+            //teste
            
         }//fim while
      
