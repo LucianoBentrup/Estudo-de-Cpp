@@ -7,12 +7,12 @@ using namespace std;
 int main ()
 {
 
-    int num=0,rnum=0;
+    int num=0,rnum=0,nummod;
 
     cout << "Insira o numero:";
     cin >> num;
 
-        while (num>=0)
+        while (num==0)
         {
             if (num<0)
             {
@@ -20,15 +20,11 @@ int main ()
             }//fim if
 
 
-            rnum = rnum * 10;
-            rnum = num % 10 + rnum; 
-            
-            //teste
-            cout << num;
-            cout << rnum;
-            cout << "loop";
-            //teste
-           
+        rnum = rnum * 10;
+        nummod = num % 10; 
+        rnum = rnum + nummod;
+        num = num / 10;
+
         }//fim while
      
     cout << "O numero ao contrario é:" << rnum << endl;
