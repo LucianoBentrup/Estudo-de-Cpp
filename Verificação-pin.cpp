@@ -13,6 +13,16 @@ void main()
         contadorerro++;
 
 
-    }while(contadorerro<=3 && pin!=userpin); 
+    }while(contadorerro<3 && pin!=userpin); 
+
+    if(pin==userpin && contadorerro<3)
+    {
+        cout << "Entrando...";
+    }
+    else 
+    {
+        cout << "Conta Bloqueada!";
+    }
+
 
 }
