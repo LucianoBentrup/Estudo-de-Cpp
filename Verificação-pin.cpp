@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void main()
+int main()
 {
 
     int userpin=1234, pin=0, contadorerro=0;
@@ -10,7 +10,11 @@ void main()
         cout << "Insira a senha correta:";
         cin >> pin; 
         if(pin!=userpin)
-        contadorerro++;
+        {
+            cout << "Senha incorreta! Tente novamente" << endl;
+            contadorerro++;
+        }
+        
 
 
     }while(contadorerro<3 && pin!=userpin); 
