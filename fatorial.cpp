@@ -7,10 +7,16 @@ using namespace std;
 
 void main()
 {
-    int num; 
+    int num,resultado=1; 
 
     cout << "Numero: ";
     cin >> num;
 
-    for(i=1;)
+    for(int x=1;x<=num;x++)
+    {
+        resultado = resultado * x;
+    }
+
+    cout << num << "!=" << resultado;
+
 }
