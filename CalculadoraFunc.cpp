@@ -12,7 +12,7 @@ void soma()
     cin >> num2;
     resultado = num1 + num2;
     cout << "O resultado é: " << resultado;
-}
+}//Fim soma
 
 void subtracao()
 {
@@ -22,7 +22,7 @@ void subtracao()
     cin >> num2;
     resultado = num1 - num2;
     cout << "O resultado é: " << resultado;
-}
+}// Fim subtracao
 
 void multiplicacao()
 {
@@ -32,7 +32,7 @@ void multiplicacao()
     cin >> num2;
     resultado = num1 * num2;
     cout << "O resultado é: " << resultado;
-}
+}//Fim multiplicacao
 
 void divisao()
 {
@@ -42,7 +42,7 @@ void divisao()
     cin >> num2;
     resultado = num1 / num2;
     cout << "O resultado é: " << resultado;   
-}
+}//Fim divisao
 
 void modulado()
 {
@@ -60,13 +60,13 @@ void modulado()
             {
                resultado = (int)num % (int)modulo;
                cout << "O resultado é: " << resultado;
-            }
+            }//Fim if
             else
             {
                 cout << "Invalido!";
-            }
+            }//Fim else
                 
-}
+}//Fim Modulado
 
 void fatorial()
 {
@@ -78,11 +78,11 @@ void fatorial()
     for(int x=1;x<=num;x++)
     {
         resultado = resultado * x;
-    }
+    }//Fim for
 
 cout << "O resultado de " << num << "! é " << resultado; 
 
-}
+}//Fim Fatorial
 
 void Calculadora()
 {
@@ -111,12 +111,11 @@ void Calculadora()
             case 6: fatorial(); break;
             case 9: "Obrigado por usar minha calculadora"; break;
             default: "Insira uma opcao valida!"; break;
-        }
-    }
-}
-
+        }//Fim Switch
+    }//Fim while
+}//Fim calculadora
 
 int main()
 {
-
+    Calculadora();
 }
