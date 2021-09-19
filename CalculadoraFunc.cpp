@@ -7,41 +7,49 @@ using namespace std;
 void soma()
 {
     double num1,num2,resultado;
-    cout << "Insira os valores para soma: ";
+    cout << "Insira os valores para soma: " << endl;
+    cout << "Valor 1: ";
     cin >> num1;
+    cout << "valor 2: ";
     cin >> num2;
     resultado = num1 + num2;
-    cout << "O resultado é: " << resultado;
+    cout << "O resultado é: " << resultado << endl;
 }//Fim soma
 
 void subtracao()
 {
     double num1, num2, resultado;
-    cout << "Insira os valores para subtracao: ";
+    cout << "Insira os valores para subtracao: " << endl;
+    cout << "Valor 1: ";
     cin >> num1;
+    cout << "Valor 2: ";
     cin >> num2;
     resultado = num1 - num2;
-    cout << "O resultado é: " << resultado;
+    cout << "O resultado é: " << resultado << endl;
 }// Fim subtracao
 
 void multiplicacao()
 {
     double num1, num2, resultado;
-    cout << "Insira os valores para multiplicacao: ";
+    cout << "Insira os valores para multiplicacao: " << endl;
+    cout << "Valor 1: ";
     cin >> num1;
+    cout << "Valor 2: ";
     cin >> num2;
     resultado = num1 * num2;
-    cout << "O resultado é: " << resultado;
+    cout << "O resultado é: " << resultado << endl;
 }//Fim multiplicacao
 
 void divisao()
 {
     double num1, num2, resultado;
-    cout << "Insira os valores para divisao: ";
+    cout << "Insira os valores para divisao: " << endl;
+    cout << "Valor 1: ";
     cin >> num1;
+    cout << "Valor 2: ";
     cin >> num2;
     resultado = num1 / num2;
-    cout << "O resultado é: " << resultado;   
+    cout << "O resultado é: " << resultado << endl;   
 }//Fim divisao
 
 void modulado()
@@ -59,7 +67,7 @@ void modulado()
             if (NumInt && moduloInt)
             {
                resultado = (int)num % (int)modulo;
-               cout << "O resultado é: " << resultado;
+               cout << "O resultado é: " << resultado << endl;
             }//Fim if
             else
             {
@@ -80,7 +88,7 @@ void fatorial()
         resultado = resultado * x;
     }//Fim for
 
-cout << "O resultado de " << num << "! é " << resultado; 
+cout << "O resultado de " << num << "! é " << resultado << endl; 
 
 }//Fim Fatorial
 
@@ -89,7 +97,7 @@ void Calculadora()
     int opcao=0;
     while(opcao!=9)
     {
-        cout << "===============Menu===============" << endl;
+        cout << endl << "===============Menu===============" << endl;
         cout << "Opcoes:" << endl;
         cout << "1 - Soma" <<endl;
         cout << "2 - Subtracao" << endl; 
@@ -109,13 +117,40 @@ void Calculadora()
             case 4: divisao(); break;
             case 5: modulado(); break; 
             case 6: fatorial(); break;
-            case 9: "Obrigado por usar minha calculadora"; break;
-            default: "Insira uma opcao valida!"; break;
+            case 9: cout << "Obrigado por usar minha calculadora"; break;
+            default: cout << "Insira uma opcao valida!"; break;
         }//Fim Switch
     }//Fim while
 }//Fim calculadora
 
 int main()
 {
-    Calculadora();
+    
+    int c=0,userpin=1234, pin=0, contadorerro=0;
+
+    do {
+        cout << "Insira a senha correta:";
+        cin >> pin; 
+        if(pin!=userpin)
+        {
+            cout << "Senha incorreta! Tente novamente" << endl;
+            contadorerro++;
+        }
+        
+
+
+    }while(contadorerro<3 && pin!=userpin); 
+
+    if(pin==userpin && contadorerro<3)
+    {
+        cout << "Abrindo calculadora aguarde um momento..." << endl << endl << endl << endl << endl << endl;
+
+        Calculadora();
+    }//Fim if
+    else
+    {
+        cout << "Tente novamente mais tarde";
+    }
+
+
 }
