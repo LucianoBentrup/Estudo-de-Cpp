@@ -16,6 +16,7 @@ int main()
         case '-' : cout << num1 << operador << num2 << "=" << num1-num2; break;
         case '/' : cout << num1 << operador << num2 << "=" << num1/num2; break;
         case '*' : cout << num1 << operador << num2 << "=" << num1*num2; break;
+        
         case '%' :
             bool Num1Int, Num2Int; 
             Num1Int=((int)num1 == num1);
