@@ -11,9 +11,11 @@ using namespace std;
 
 
 //Variaveis globais
-int qntd;
+int qntd,tamanho;
 float saldo,valor;
-string produto;
+string* produto = new string[tamanho];
+int* qntd = new int[tamanho];
+int* valor = new int[tamanho];
 //Variaveis globiais
 
 
@@ -30,9 +32,17 @@ void inserir()
 {
     //nome, valor, qntd
     int opcao1;
-    switch(opcao1!=9)
+    
+    cout << endl << "Insira 1 para continuar ou 9 para voltar para o menu:"; 
+    cout << opcao1;
+    
+    switch(opcao1)
     {
-
+        case 1: 
+        {
+            
+        }
+        case 9: cout << "Indo para o menu..." << endl << endl;
     }
 
 }
