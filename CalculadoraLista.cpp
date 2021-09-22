@@ -2,6 +2,10 @@
 using namespace std;
 
 
+/*Verificar: 
+Pilha: https://www.ime.usp.br/~pf/algoritmos/aulas/pilha.html
+Vetor: https://wagnergaspar.com/como-orden...oritmo-insertion-sort-ordenacao-por-insercao/
+Matriz: https://www.ic.unicamp.br/~lehilton/mc102qr/unidades/08-matrizes.html*/
 //Programa para lista de comprar
 //Necessita inserir saldo ✓
 //Criar menu ✓
