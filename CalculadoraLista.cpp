@@ -14,6 +14,10 @@ Matriz: https://www.ic.unicamp.br/~lehilton/mc102qr/unidades/08-matrizes.html*/
 // Mostrar a lista e valor dela
 
 
+
+//Evitar o uso de variavel global para otimizar o codigo 
+
+
 //Variaveis globais
 int qntd,tamanho;
 float saldo,valor;
