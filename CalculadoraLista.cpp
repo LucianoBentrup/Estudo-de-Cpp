@@ -57,7 +57,8 @@ void inserir()
 
 void exibir()
 {
-    //Puxar os dados e printar eles aqui 
+    //Puxar os dados de "inserir()" e printar eles aqui 
+   
 
     
 }
